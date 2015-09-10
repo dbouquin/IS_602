@@ -1,4 +1,5 @@
-# up to 25 mins on tutorial: https://www.youtube.com/watch?v=N4mEzFDjqtA
+# Crash course video:
+# up to 25 mins on tutorial at https://www.youtube.com/watch?v=N4mEzFDjqtA
 
 import random
 import sys
