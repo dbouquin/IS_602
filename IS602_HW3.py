@@ -81,7 +81,7 @@ print df_safety_sort.head(n=10)
 
 df_maint_sort = df.sort(columns= "maintenance_price", ascending = True)
 
-print "2b. Last 15 sorted by maintenance in descending order:"
+print "2b. Last 15 sorted by maintenance in ascending order:"
 print df_maint_sort.tail(n=15)
 
 #2c. Print to the console all rows that are high or vhigh in fields 'buying', 'maint', and 'safety', sorted by 'doors' in ascending order.
@@ -98,7 +98,7 @@ print df[mask].sort('doors', ascending=True)
 
 part2d = df.query('buying_price == "high" and maintenance_price == "med" and doors == "4" and persons_capacity == "4" or persons_capacity == "more"')
 
-print "This is part 2d that will be written to a csv called 'output.csv':"
+print "2d. All rows (in any order) that are: 'buying': vhigh, 'maint': med, 'doors': 4, and 'persons': 4 or more. It will be written to a csv called 'output.csv':"
 print part2d
 
 part2d.to_csv('output.csv')
