@@ -12,9 +12,9 @@ text_extracted = ''
 
 while True:
   try:
-     print "\n\nEnter the URL to analyze.".center(50," ")
-     print "        Hit ENTER for the URL to be parsed:"
-     url = raw_input("\nEnter the URL or Press ENTER for default URL==>")
+     print "\n\n Input the URL to analyze.".center(50," ")
+     print "Hit ENTER for the URL to be parsed:"
+     url = raw_input("\nInput the URL OR Press ENTER for default URL==>")
 
      if url == '': url = "https://www.cfa.harvard.edu/news/2015-19" # this is the default
      page = urllib2.urlopen(url)
@@ -41,10 +41,10 @@ web_text = text_extracted
 
 print '\n\n'
 print "URL Source: " + url
-print web_text +'\n'
+print web_text
+print '\n\n'
 
 print '#### Top 10 Keywords ####'.center(80," ")
-
 
 response = alchemyapi.keywords('text', web_text, {'sentiment': 1}) # From example.py of alchemyapi module
 
