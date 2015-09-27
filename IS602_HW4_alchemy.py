@@ -41,7 +41,7 @@ web_text = text_extracted
 
 print '\n\n'
 print "URL Source: " + url
-print web_text +'\n\n'
+print web_text +'\n'
 
 print '#### Top 10 Keywords ####'.center(80," ")
 
