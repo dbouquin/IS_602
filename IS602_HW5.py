@@ -112,8 +112,3 @@ print b_int
 # Print the model to the console:
 print "bo = ", round(slope,2), "br +", b_int
 
-
-# In[ ]:
-
-
-
