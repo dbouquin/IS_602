@@ -1,6 +1,10 @@
 
 # coding: utf-8
 
+# ### Authorship tendencies in Astronomy and Astrophysics
+# #### Daina Bouquin
+# Below you can search the [NASA Astrophysics Data System](https://ui.adsabs.harvard.edu/) for papers associated with three search terms and compare the authorship results of those searches. Specifically, you should enter three different terms and run the remaining code blocks to visualize the results. The code results in a summary table showing the average number of authors per paper in a given topic for the most recent 200 papers authored by researchers at the Harvard-Smithsonian Center for Astrophysics and a violin plot displaying these results along with a distribution of the results.
+
 # In[3]:
 
 import os
@@ -24,17 +28,17 @@ ads.config.token = 'ADS_DEV_KEY'
 
 # In[6]:
 
-x = raw_input('--> ') # the first term you want to search 
+x = raw_input('first search term --> ') # the first term you want to search 
 
 
 # In[7]:
 
-y = raw_input('--> ') # the second term you want to search for comparison
+y = raw_input('second search term --> ') # the second term you want to search for comparison
 
 
 # In[8]:
 
-z = raw_input('--> ') # the third term you want to search for comparison
+z = raw_input('third search term --> ') # the third term you want to search for comparison
 
 
 # In[9]:
